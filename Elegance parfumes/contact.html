@@ -46,20 +46,47 @@
       </p>
       <div class="row justify-content-center">
         <div class="col-md-6">
-          <form id="contactForm">
+          <form
+            action="https://formsubmit.co/elmedin.hyseni@umib.net"
+            method="POST"
+          >
+            <!-- Prevent FormSubmit captcha -->
+            <input type="hidden" name="_captcha" value="false" />
+            <!-- Email subject -->
+            <input
+              type="hidden"
+              name="_subject"
+              value="New Contact Message from Elegance Parfumes!"
+            />
+            <!-- Email template -->
+            <input type="hidden" name="_template" value="box" />
+
             <div class="mb-3">
               <label for="name" class="form-label">Your Name</label>
-              <input type="text" class="form-control" id="name" required />
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                name="name"
+                required
+              />
             </div>
             <div class="mb-3">
               <label for="email" class="form-label">Your Email</label>
-              <input type="email" class="form-control" id="email" required />
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                name="email"
+                required
+              />
             </div>
             <div class="mb-3">
               <label for="message" class="form-label">Your Message</label>
               <textarea
                 class="form-control"
                 id="message"
+                name="message"
                 rows="5"
                 required
               ></textarea>
