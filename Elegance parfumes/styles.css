@@ -1,0 +1,25 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f8f9fa;
+}
+
+.hero {
+  height: 80vh;
+  background: linear-gradient(to right, #b993d6, #8ca6db);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  transition: transform 0.3s ease;
+}
+
+.btn-dark {
+  background-color: #4b0082;
+  border: none;
+}
+
+.card-img-top {
+  height: 280px;
+  object-fit: cover;
+  border-radius: 8px;
+}
