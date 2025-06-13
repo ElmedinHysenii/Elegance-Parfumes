@@ -43,6 +43,8 @@ function clearCart() {
   }
 }
 
+//add check out option later on
+
 // Update the cart UI (only works if cart page has these elements)
 function updateCart() {
   const tbody = document.getElementById("cart-body");
